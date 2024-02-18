@@ -16,7 +16,7 @@ body {
   margin: 0;
 }
 
-.header {
+.header-section {
   background-color: #1f2937;
   color: white;
   display: flex;
@@ -26,7 +26,6 @@ body {
 .header-container {
   display: flex;
   flex-direction: column;
-  flex: 1;
   margin: 0 100px; /* verticale: 0, orizzontale: 100px */
 }
 
@@ -49,10 +48,10 @@ a {
 
 .header-links {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
-a {
+.header-links a {
   font-size: 18px;
   text-decoration: none;
 }
@@ -60,37 +59,63 @@ a {
 .header-content {
   display: flex;
   margin: 40px 0;
+  padding: 0 200px;
   gap: 50px;
   justify-content: center;
 }
 
-.content-right img {
+.content-left img {
   background-color: rgb(170, 170, 170);
   border-radius: 16px;
   max-width: 300px;
 }
 
-.content-left button {
+.content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.description-container {
+  display: flex;
+  gap: 30px;
+}
+
+.english,
+.italian {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.description-container img {
+  max-width: 100px;
+  border-radius: 12px;
+}
+
+.content-right button {
   background-color: #3882f6;
   color: white;
   border-radius: 6px;
   padding: 8px 24px;
   font-weight: 400;
-  border: 0px;
+  font-size: 20px;
   font-family: inherit;
+  border: 0;
 }
 
-.content-left h1 {
+.content-right .my-name {
   font-size: 48px;
-  /* font-weight: bold;*/
-  letter-spacing: 10px;
   color: #f9faf8;
-  margin: 0;
+  align-self: stretch;
 }
 
-.content-left p {
+.content-right p {
   font-size: 18px;
   color: #e5e7eb;
+  text-align: justify;
 }
 
 /* card section */
@@ -102,18 +127,27 @@ a {
   justify-content: center;
   background-color: white;
   padding: 50px 0;
+  gap: 50px;
 }
 
 .card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 36px;
-  font-weight: bolder;
   color: #1f2937;
-  padding: 20px;
+}
+
+.card-top h1,
+.card-top p {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 8px;
 }
 
 .cards-container {
   display: flex;
-  gap: 20px;
+  gap: 100px;
   margin: 10px 150px;
 }
 
@@ -127,8 +161,8 @@ a {
 .card {
   border: 2px solid #3882f6;
   border-radius: 6px;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 /* Quotation */
