@@ -171,6 +171,11 @@ a {
   height: 200px;
 }
 
+.card.rps {
+  background-image: url(./img/rps-thumbnail.PNG);
+  background-size: contain;
+}
+
 /* Quotation */
 
 .quotation-section {
