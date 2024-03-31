@@ -11,6 +11,10 @@
   font-variation-settings: "wdth" 100;
 }
 
+:root {
+  --dark-blue: #1f2937;
+}
+
 body {
   font-family: "Fredoka", sans-serif;
   margin: 0;
@@ -32,7 +36,7 @@ body {
 }
 
 .header-section {
-  background-color: #1f2937;
+  background-color: var(--dark-blue);
   color: white;
   display: flex;
   justify-content: center;
@@ -175,7 +179,7 @@ a {
 
 .cards-container {
   display: flex;
-  gap: 100px;
+  gap: max(40px, 5vw);
   margin: 10px 150px;
 }
 
@@ -275,7 +279,7 @@ a {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-color: #1f2937;
+  background-color: var(--dark-blue);
   color: white;
   padding: 20px 0;
   font-size: 12px;
