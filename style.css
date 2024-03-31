@@ -36,6 +36,7 @@ body {
   color: white;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .header-container {
@@ -47,8 +48,13 @@ body {
 .header-top {
   display: flex;
   justify-content: space-between;
-  flex: 1;
   margin-top: 15px;
+  border: 1px solid white;
+  padding: 0 2vw;
+}
+
+.header-top * {
+  border: 1px solid red;
 }
 
 .header-logo {
@@ -74,7 +80,7 @@ a {
 .header-content {
   display: flex;
   margin: 40px 0;
-  padding: 0 200px;
+  padding: 0 20vw;
   gap: 50px;
   justify-content: center;
 }
@@ -86,7 +92,13 @@ a {
   border: 3px solid whitesmoke;
 }
 
+.profile-pic:hover {
+  scale: 105%;
+  transition: 0.4s;
+}
+
 .content-right {
+  min-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -124,7 +136,7 @@ a {
 
 .hire-me-btn:hover {
   background-color: #2f6ac9;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .content-right .my-name {
